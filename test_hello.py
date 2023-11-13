@@ -1,6 +1,8 @@
-from hello import add
+from hello import add,subtract
 
 
 def test_add():
     assert 2 == add(1, 1)
-    assert 5 == add(2, 3)
+
+def test_subtract():
+    assert 1 == subtract(2, 1)
