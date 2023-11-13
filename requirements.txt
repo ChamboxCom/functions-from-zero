@@ -7,4 +7,6 @@ fire==0.4.0
 fastapi==0.68.1
 pydantic==1.8.2
 uvicorn==0.15.0
+urllib3<2
+
 
