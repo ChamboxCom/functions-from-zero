@@ -7,6 +7,7 @@ install:
 test:
 	@echo "Running tests..."
 	python -m pytest -vv --cov=hello test_hello.py
+	python -m pytest -vv --cov=mylib.bot test_bot.py
 	@echo "Tests Complete"
 
 format:
