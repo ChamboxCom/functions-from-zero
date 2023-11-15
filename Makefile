@@ -12,12 +12,12 @@ test:
 
 format:
 	@echo "Formatting..."
-	black *.py
+	find . -type f -name '*.py' | xargs black
 	@echo "Format Complete"
 
 lint:
 	@echo "Linting..."
-	pylint --disable=R,C *.py
+	find . -type f -name '*.py' | xargs pylint --disable=R,C
 	@echo "Lint Complete"
 
 all: install test format lint
